@@ -13,6 +13,7 @@ export const Pagination: React.FC<Props> = ({ totalPages, currentPage, onPageCha
 
     const renderPageButton = (pageNumber: number, text: string | number) => {
       const isOnCurrentPage = currentPage === pageNumber;
+      
       return (
         <div
           key={pageNumber}

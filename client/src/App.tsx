@@ -14,11 +14,13 @@ function App() {
   const [title, setTitle] = useState('');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [hasError, setHasError] = useState<boolean>(false);
+
   const setErrorMessage = useNotesStore(state => state.setErrorMessage)
   const createNote = useNotesStore(state => state.createNote);
   const updateNote = useNotesStore(state => state.updateNote);
   const deleteNote = useNotesStore(state => state.deleteNote);
   const getAllNotes = useNotesStore(state => state.getAllNotes);
+
   const { notes } = useNotesStore();
   const { errorMessage } = useNotesStore();
 
@@ -89,7 +91,6 @@ function App() {
 
     try {
       updateNote(id, {...note, isCompleted: !isCompleted})
-      
     } catch (error) {
       throw new Error(`Cannot change status in note. Error message: ${error}`);
     }

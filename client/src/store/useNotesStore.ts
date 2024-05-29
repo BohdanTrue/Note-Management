@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { create, useStore } from 'zustand';
+import { create } from 'zustand';
 import { Note } from '../types/Note';
 import { ErrorMessage } from '../types/Errors';
 
@@ -72,7 +72,6 @@ const useNotesStore = create<NotesStore>((set) => ({
         console.error('Error updating note:', error);
     }
   },
-
 
   getAllNotes: async () => {
     try {

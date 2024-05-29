@@ -25,4 +25,4 @@ export const NoteList:React.FC<Props> = ({ notes, onRename, onDelete, onChangeSt
       </ul>
     </div>
   )
-}
+};

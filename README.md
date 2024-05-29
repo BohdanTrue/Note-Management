@@ -11,7 +11,7 @@ To run the project, follow this instruction:
     git clone .
     ```
 
-2. Download [JDK](https://www.oracle.com/java/technologies/downloads/), [Apache Maven](https://maven.apache.org/download.cgi) and [Docker](https://docs.docker.com/get-docker/)
+2. Download [JDK](https://www.oracle.com/java/technologies/downloads/), [Apache Maven](https://maven.apache.org/download.cgi), [Docker](https://docs.docker.com/get-docker/) and NPM (it means, you should have [NodeJS](https://nodejs.org/en) on your machine)
 
 3. Move on the <strong>server</strong> directory
     ```bash
@@ -47,9 +47,9 @@ Let's move on to the client directory and run him
     ```bash
     npm start
     ```
-Congratulations!!!
 
-You can run simple e2e test using ``` npx cypress``` 
+You can run simple e2e test using ```npx cypress open``` 
+
 ## Technologies used
 
 - ### Backend Technologies

@@ -25,4 +25,4 @@ export const Header:React.FC<Props> = ({ title, setTitle, handleSubmit }) => {
       </form>
     </header>
   )
-}
+};

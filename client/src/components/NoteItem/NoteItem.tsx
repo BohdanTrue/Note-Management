@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Note } from '../../types/Note';
-import styles from './NoteItem.module.scss';
 import DeleteIcon from '../../images/delete-icon.svg'
 
 interface Props {
