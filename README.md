@@ -48,7 +48,7 @@ Let's move on to the client directory and run him
     npm start
     ```
 
-You can run simple e2e test using ```npx cypress open``` 
+You can run simple e2e test using ```npx cypress run --spec "cypress\e2e\home.page.spec.cy.ts"``` (you should have installed cypress in dev dependencies before - ```npm install cypress --save-dev```)
 
 ## Technologies used
 
