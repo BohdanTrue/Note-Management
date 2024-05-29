@@ -1,0 +1,48 @@
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  justify-content: center;
+  align-items: center;
+
+  .page-item {
+    margin: 0 0.5em;
+    cursor: pointer;
+    user-select: none;
+
+    &.active {
+      font-weight: bold;
+    }
+
+    &.ellipsis {
+      cursor: default;
+    }
+
+    p {
+      margin: 0;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  .arrow {
+    cursor: pointer;
+    user-select: none;
+
+    p {
+      margin: 0;
+      padding: 0.5em;
+      transition: background-color 0.3s;
+      
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}

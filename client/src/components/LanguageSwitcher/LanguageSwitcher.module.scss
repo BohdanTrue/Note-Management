@@ -1,0 +1,31 @@
+.languageSwitcher {
+  display: flex;
+  gap: 16px;
+
+  button {
+    padding: 8px;
+    border: 1px solid #808080;
+    background-color: #ffffff;
+    color: #70b293;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    &:disabled {
+      background-color: #f0f0f0;
+      color: #cccccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
