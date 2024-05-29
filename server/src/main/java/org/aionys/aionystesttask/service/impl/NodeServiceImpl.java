@@ -1,6 +1,7 @@
 package org.aionys.aionystesttask.service.impl;
 
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.aionys.aionystesttask.dto.NoteRequestDto;
 import org.aionys.aionystesttask.dto.NoteResponseDto;
@@ -44,6 +45,7 @@ public class NodeServiceImpl implements NodeService {
     }
 
     @Override
+    @Transactional
     public NoteResponseDto update(Long id, NoteUpdateRequestDto requestDto) {
         Note note = findById(id);
 
