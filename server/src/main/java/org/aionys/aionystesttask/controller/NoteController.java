@@ -28,7 +28,7 @@ import java.util.List;
 public class NoteController {
     private final NodeService noteService;
 
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.CREATED)
     @Operation(summary = "Create a new note", description = "Create a new note")
     @PostMapping
     public NoteResponseDto create(@RequestBody @Valid NoteRequestDto requestDto) {
